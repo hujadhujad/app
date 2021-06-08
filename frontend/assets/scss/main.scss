@@ -1,0 +1,125 @@
+// Grid
+@import './typography';
+
+html {
+  scroll-behavior: smooth;
+}
+// Base
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+// Bootstrap overwrite
+
+@media (min-width: 1430px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+// General
+
+.WPage {
+  background: $color-page-bg;
+  min-height: 100vh;
+  &--layout-blog {
+    padding: 132px 0 90px 0;
+    @media (max-width: $breakpoint-md) {
+      padding-top: 87px;
+    }
+  }
+  &--layout-inner {
+    padding: 144px 0 90px 0;
+    @media (max-width: $breakpoint-md) {
+      padding-top: 99px;
+    }
+  }
+  &--bg-white {
+    background: $color-white;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 21px;
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: $font-semibold;
+    margin-right: 37px;
+    @media (max-width: $breakpoint-md) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// WIcon
+
+.WIcon {
+  svg {
+    display: block;
+  }
+}
+
+// Helpers
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.WSection {
+  position: relative;
+  z-index: 2;
+}
+
+// WLayout zoomed
+
+.WLayout--zoomed {
+  .WNavbar__inner,
+  .WGraphic,
+  .WHero .container,
+  .WFooter .container,
+  .container,
+  .WSection .WSection__content {
+    zoom: 0.9;
+    transform: scale(0.9);
+  }
+}
+.WLayout--zoomed-retina {
+  .WNavbar__inner,
+  .WGraphic,
+  .WHero .container,
+  .WFooter .container,
+  .container,
+  .WSection .WSection__content {
+    zoom: 0.9;
+    transform: scale(0.9);
+  }
+}
+
+.WSectionTextPhoto .container {
+  position: static!important;
+}

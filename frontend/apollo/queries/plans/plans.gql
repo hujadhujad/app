@@ -1,0 +1,10 @@
+query Plans {
+  plans {
+    id,
+    title,
+    price,
+    features {
+      title
+    }
+  }
+}

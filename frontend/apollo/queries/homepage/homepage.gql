@@ -1,0 +1,104 @@
+query Homepage {
+  homepage {
+    Meta {
+    	title,
+      description,
+      image {
+        formats
+      }
+    },
+    sections {
+      __typename,
+      ... on ComponentHeroHero {
+        headline,
+        paragraph,
+        buttonText,
+        buttonRoute
+      },
+      ... on ComponentSectionsSection {
+        headline,
+        subtitle,
+        description,
+        photos {
+          formats
+        },
+        appearance {
+          size,
+          theme
+        }
+      },
+      ... on ComponentSectionsSectionFeatures {
+        headline,
+        subtitle,
+        description,
+        appearance {
+          size,
+          theme
+        },
+        features {
+          title,
+          description
+        }
+      },
+      ... on ComponentSectionsSectionPlans {
+        headline,
+        subtitle,
+        description,
+        appearance {
+          size,
+          theme
+        },
+        plans {
+          id,
+          title,
+          price,
+          description,
+          highlighted,
+          features {
+            title
+          }
+        }
+      },
+      ... on ComponentSectionsSectionPhotoGrid {
+        headline,
+        subtitle,
+        description,
+        appearance {
+          size,
+          theme
+        },
+        photos {
+          formats
+        }
+      },
+      ... on ComponentSectionsSectionFaq {
+        headline,
+        subtitle,
+        description,
+        appearance {
+          size,
+          theme
+        },
+        faq {
+          title,
+          content
+        }
+      },
+      ... on ComponentSectionsSectionArticles {
+        headline,
+        subtitle,
+        description,
+        appearance {
+          size,
+          theme
+        },
+        articles {
+          title,
+          cover {
+            formats
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_section_faqs",
+  "info": {
+    "name": "SectionFaq",
+    "icon": "dice-five"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.faq"
+    },
+    "appearance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.appearance"
+    }
+  }
+}

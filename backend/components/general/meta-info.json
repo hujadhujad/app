@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_general_meta_infos",
+  "info": {
+    "name": "metaInfo",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 180
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

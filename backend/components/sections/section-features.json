@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_section_features",
+  "info": {
+    "name": "SectionFeatures",
+    "icon": "dice-two"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.feature"
+    },
+    "appearance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.appearance"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "webdevs-fe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate-fragments-schema": "graphql-codegen",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@graphql-codegen/cli": "^1.17.10",
+    "@graphql-codegen/fragment-matcher": "^1.17.8",
+    "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "apollo-cache-inmemory": "^1.6.6",
+    "bootstrap": "^4.5.2",
+    "core-js": "^3.6.5",
+    "graphql-tag": "^2.11.0",
+    "lazysizes": "^5.2.2",
+    "nuxt": "^2.14.5",
+    "nuxt-ssr-cache": "^1.5.2",
+    "nuxt-webfontloader": "^1.1.0",
+    "swiper": "^6.3.3",
+    "v-mask": "^2.2.3",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-observe-visibility": "^0.4.6",
+    "vue-parallax-js": "^0.2.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2"
+  }
+}

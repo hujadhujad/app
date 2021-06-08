@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_appearances",
+  "info": {
+    "name": "appearance",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "medium"
+      ],
+      "default": "default"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light",
+        "grey"
+      ],
+      "default": "dark"
+    }
+  }
+}

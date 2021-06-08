@@ -1,0 +1,13 @@
+query Orderpage {
+  orderpage {
+    features {
+      id,
+      title,
+      price,
+      description,
+      article {
+        slug
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_hero_heroes",
+  "info": {
+    "name": "Hero",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonRoute": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_plans",
+  "info": {
+    "name": "plan",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "highlighted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

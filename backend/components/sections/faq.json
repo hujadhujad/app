@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_faqs",
+  "info": {
+    "name": "faq",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

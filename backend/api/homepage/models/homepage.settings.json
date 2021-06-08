@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "hero.hero",
+        "sections.section-plans",
+        "sections.section-features",
+        "sections.section",
+        "sections.section-articles",
+        "sections.section-photo-grid",
+        "sections.section-faq"
+      ]
+    },
+    "Meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.meta-info"
+    }
+  }
+}

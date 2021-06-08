@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_section_text_photos",
+  "info": {
+    "name": "SectionTextPhotos",
+    "icon": "dice-one"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "appearance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.appearance"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_section_plans",
+  "info": {
+    "name": "SectionPlans",
+    "icon": "dice-three"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.plan"
+    },
+    "appearance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.appearance"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query Plans($id: ID!) {
+  plan(id: $id) {
+    id,
+    title,
+    price,
+    custom,
+    features {
+      title
+    }
+  }
+}
